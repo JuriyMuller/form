@@ -1,0 +1,103 @@
+.container {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+form {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+}
+input {
+  border: solid 2px #e8e8e8;
+  border-radius: 20px;
+  padding: 5px 15px;
+}
+.name,
+.price {
+  width: 90%;
+  display: block;
+  margin-bottom: 10px;
+}
+select {
+  display: block;
+  text-align: center;
+  padding: 5px;
+  width: 100%;
+  border-radius: 20px;
+  border: solid 2px #e8e8e8;
+  background-color: rgba(187, 187, 187, 0);
+}
+label {
+  display: block;
+  margin: 10px 0;
+  font-size: 30px;
+  color: rgb(68, 68, 68);
+}
+.properties {
+  padding-left: 50px;
+  margin: 20px;
+  position: relative;
+}
+.properties::before {
+  position: absolute;
+  content: url("./img/icon-1.png");
+  left: -10px;
+}
+.properties-item {
+  font-size: 20px;
+  color: rgb(68, 68, 68);
+  text-decoration: none;
+  border-bottom: dashed rgb(77, 77, 77);
+}
+.properties-desc {
+  margin: 5px 0;
+  font-size: 15px;
+  color: rgb(155, 155, 155);
+}
+.links {
+  margin: 20px;
+  padding-left: 50px;
+  position: relative;
+}
+.links::before {
+  position: absolute;
+  content: url("./img/icon-2.png");
+  left: -10px;
+  top: -5px;
+}
+.links-item {
+  width: 90%;
+}
+.img {
+  margin: 40px 20px 20px 20px;
+  padding-left: 50px;
+  position: relative;
+}
+.img::before {
+  position: absolute;
+  content: url("./img/icon-3.png");
+  left: -10px;
+  top: -10px;
+}
+.img-item {
+  border: none;
+}
+.desc {
+  border-radius: 20px;
+  border: solid 2px #e8e8e8;
+  margin-bottom: 20px;
+}
+.comments {
+  padding-left: 50px;
+  margin-bottom: 20px;
+}
+.btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(120, 194, 136);
+  color: #ffffff;
+  cursor: pointer;
+}

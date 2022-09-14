@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <input class="name" type="text" placeholder="название" />
+        <input class="price" type="text" placeholder="стоимость" />
+        <select name="categories" id="categories">
+          <option class="categorie" value="categorie">категория</option>
+          <option class="transport" value="transport">транспорт</option>
+          <option class="real-estate" value="real-estate">недвижимость</option>
+          <option class="electronics" value="electronics">электроника</option>
+          <option class="personal-items" value="personal-items">
+            личные вещи
+          </option>
+        </select>
+        <label>Описание</label>
+        <div class="properties">
+          <a href="#" class="properties-item">свойства и детали</a>
+          <p class="properties-desc">
+            например, квадратура, размеры, и т.д. Сначала выберите категорию
+          </p>
+        </div>
+        <div class="links">
+          <input class="links-item" type="text" placeholder="ссылка на видео" />
+        </div>
+        <div class="img">
+          <input type="file" class="img-item" />
+        </div>
+
+        <textarea class="desc" name="desc" cols="47" rows="10"></textarea>
+        <div class="comments">
+          <span>Комментарии разрешены </span>
+          <input checked type="checkbox" name="comments" id="" />
+        </div>
+        <button class="btn" type="submit">Создать</button>
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
