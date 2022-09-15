@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="container">
-      <form>
+      <form class="form">
         <input class="name" type="text" placeholder="название" />
         <input class="price" type="text" placeholder="стоимость" />
         <select name="categories" id="categories">
@@ -17,16 +17,71 @@
           <option class="transport" value="transport">транспорт</option>
           <option class="real-estate" value="real-estate">недвижимость</option>
           <option class="electronics" value="electronics">электроника</option>
-          <option class="personal-items" value="personal-items">
-            личные вещи
-          </option>
         </select>
+        <div class="real-estate__content">
+          <div class="wrapper">
+            <h2 class="real-estate__content__subtitle">Количество комнат</h2>
+            <select class="rooms" name="rooms">
+              <option class="rooms-item" value="1">1</option>
+              <option class="rooms-item" value="2">2</option>
+              <option class="rooms-item" value="3">3</option>
+              <option class="rooms-item" value="4">4</option>
+              <option class="rooms-item" value="5">5</option>
+              <option class="rooms-item" value="6">6</option>
+            </select>
+            <h2 class="real-estate__content__subtitle">Площадь (м2)</h2>
+            <input class="square" type="number" />
+          </div>
+        </div>
+        <div class="transport__content">
+          <select class="transport-types">
+            <option value="1">Автомобили</option>
+            <option value="2">Автозапчасти</option>
+            <option value="3">Аксессуары, шины и тюнинг</option>
+            <option value="4">Грузовой и с/х транспорт</option>
+            <option value="5">Мотоциклы и мопеды</option>
+            <option value="6">Водный транспорт</option>
+          </select>
+        </div>
+        <div class="electronics__content">
+          <select class="electronics__items">
+            <option value="1">Мобильные телефоны и аксессуары</option>
+            <option value="2">Компьютеры, ноутбуки и планшеты</option>
+            <option value="3">Бытовая техника</option>
+            <option value="4">Техника для кухни</option>
+            <option value="5">Видеоигры и приставки</option>
+            <option value="6">Автоэлектроника</option>
+            <option value="7">Фото и видеокамеры</option>
+          </select>
+        </div>
+
         <label>Описание</label>
         <div class="properties">
           <a href="#" class="properties-item">свойства и детали</a>
           <p class="properties-desc">
             например, квадратура, размеры, и т.д. Сначала выберите категорию
           </p>
+        </div>
+        <div class="properties-window">
+          <a href="#" class="close-window"></a>
+          <h2 class="properties-window__title">свойства и детали</h2>
+
+          <div class="properties-window__wrapper">
+            <h3 class="state__title">Состояние</h3>
+            <span class="state__buttons">
+              <button class="state__btn">Новое</button>
+              <button class="state__btn">Б/У</button>
+            </span>
+            <h3 class="price__title">Цена</h3>
+            <span class="price">
+              <input type="text" />
+            </span>
+            <h3 class="amount__title">Несколько штук в наличии</h3>
+            <span class="amount__item">
+              <input type="checkbox" name="" id="" />
+            </span>
+          </div>
+          <a class="properties-window__btn" href="#">сохранить</a>
         </div>
         <div class="links">
           <input class="links-item" type="text" placeholder="ссылка на видео" />
@@ -38,7 +93,13 @@
         <textarea class="desc" name="desc" cols="47" rows="10"></textarea>
         <div class="comments">
           <span>Комментарии разрешены </span>
-          <input checked type="checkbox" name="comments" id="" />
+          <input
+            checked
+            class="comments_item"
+            type="checkbox"
+            name="comments"
+            id=""
+          />
         </div>
         <button class="btn" type="submit">Создать</button>
       </form>
