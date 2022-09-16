@@ -1,18 +1,26 @@
+* {
+  font-family: "Comfortaa", "sans-serif";
+  box-sizing: border-box;
+}
 body {
+  background: radial-gradient(
+    circle,
+    rgba(224, 63, 251, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
   padding: 0;
   margin: 0;
-  font-family: "Gill Sans", sans-serif;
 }
 .container {
-  width: 400px;
+  width: 358px;
   margin: 0 auto;
   margin-top: 10px;
 }
 form {
-  border: 2px solid black;
   border-radius: 10px;
-  padding: 20px;
+  padding: 10px;
   position: relative;
+  background-color: #ffffff;
 }
 input {
   border: solid 2px #e8e8e8;
@@ -21,21 +29,37 @@ input {
 }
 .name,
 .price {
-  width: 90%;
+  width: 100%;
   display: block;
   margin-bottom: 10px;
 }
-
 select {
+  text-align: center;
   display: block;
-  margin-bottom: 10px;
-
-  padding: 5px;
+  margin-bottom: 35px;
+  padding: 12px;
   width: 100%;
   border-radius: 20px;
   border: solid 2px #e8e8e8;
   background-color: rgba(187, 187, 187, 0);
+  font-size: 15px;
+  font-weight: bold;
+  position: inherit;
 }
+form::before {
+  position: absolute;
+  content: "";
+  padding: 16px;
+  background: url("./img/select.png") no-repeat center center;
+  background-size: cover;
+  top: 93px;
+  right: 16px;
+  z-index: 1;
+}
+option {
+  font-family: "Comfortaa", "sans-serif";
+}
+
 .rooms {
   margin-bottom: 10px;
 }
@@ -58,58 +82,82 @@ select {
 }
 label {
   display: block;
-  margin: 10px 0;
-  font-size: 30px;
+  margin: 15px 0;
+  font-size: 20px;
   color: rgb(68, 68, 68);
+  font-weight: bold;
 }
 .properties {
-  padding-left: 50px;
+  padding-left: 40px;
   margin: 20px;
   position: relative;
 }
 .properties::before {
   position: absolute;
-  content: url("./img/icon-1.png");
-  left: -10px;
+  content: "";
+  background: url("./img/icon-1.png") no-repeat center center;
+  background-size: cover;
+  padding: 22px;
+  left: -19px;
 }
 .properties-item {
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: bold;
   color: rgb(68, 68, 68);
   text-decoration: none;
   border-bottom: dashed rgb(77, 77, 77);
 }
 .properties-desc {
   margin: 5px 0;
-  font-size: 15px;
-  color: rgb(155, 155, 155);
+  font-size: 11px;
+  color: rgb(114, 114, 114);
+  line-height: 14px;
 }
 .links {
   margin: 20px;
-  padding-left: 50px;
+  padding-left: 40px;
   position: relative;
 }
 .links::before {
   position: absolute;
-  content: url("./img/icon-2.png");
-  left: -10px;
-  top: -5px;
+  content: "";
+  background: url("./img/icon-2.png") no-repeat center center;
+  background-size: cover;
+  padding: 22px;
+  left: -19px;
+  top: -9px;
 }
 .links-item {
-  width: 90%;
+  width: 108%;
+  padding: 5px 15px;
 }
 .img {
-  margin: 40px 20px 20px 20px;
-  padding-left: 50px;
+  margin: 30px 20px 15px 20px;
+  padding-left: 40px;
   position: relative;
 }
 .img::before {
   position: absolute;
-  content: url("./img/icon-3.png");
-  left: -10px;
+  content: "";
+  background: url("./img/icon-3.png") no-repeat center center;
+  background-size: cover;
+  padding: 22px;
+  left: -19px;
   top: -10px;
 }
 .img-item {
+  padding: 5px 0;
+  position: relative;
   border: none;
+  opacity: 0;
+  z-index: 2;
+}
+.file {
+  position: absolute;
+  top: 2px;
+  left: 41px;
+  z-index: 1;
+  font-size: 15px;
 }
 .desc {
   max-width: 335px;
@@ -121,15 +169,28 @@ label {
 .comments {
   padding-left: 50px;
   margin-bottom: 20px;
+  position: relative;
+}
+.comments::before {
+  position: absolute;
+  content: "";
+  padding: 20px;
+  background: url("./img/icon-4.png") no-repeat center center;
+  background-size: cover;
+  left: 5px;
+  top: -12px;
 }
 .btn {
   width: 100%;
   padding: 10px;
   border-radius: 20px;
   border: none;
+  font-weight: 700;
   background-color: rgb(120, 194, 136);
   color: #ffffff;
   cursor: pointer;
+  font-size: 18px;
+  box-shadow: 1px 2px rgba(0, 0, 0, 0.226);
 }
 .wrapper {
   display: grid;
